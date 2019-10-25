@@ -1,0 +1,382 @@
+<html>
+	<head>
+		<title>Events - ActiveNYP</title>
+		<link href="../../Genboy.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		*{
+			box-sizing: border-box;
+			}
+			
+		.body{
+			background-image: url("../Pictures/eventbg.jpg");
+			background-size: cover;
+			min-height:1757px;
+			background-repeat: no-repeat;
+			background-position:center;
+			}
+		.filterzz{
+			background-color: rgba( 0,0,0,0.6);
+			z-index:-5;
+			min-height:1757px;
+			}
+		.slidershow{
+		  width: 800px;
+		  height: 457px;
+		  overflow: hidden;
+		}
+		.middle{
+		  position: absolute;
+		  top: 230px;
+		  left: 50%;
+		  transform: translate(-50%,-50%);
+		}
+		.navigation{
+		  position: absolute;
+		  bottom: 20px;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  display: flex;
+		}
+		.bar{
+		  width: 50px;
+		  height: 14px;
+		  border: 2px solid #fff;
+		  margin: 5px;
+		  cursor: pointer;
+		  transition: 0.4s;
+		}
+
+		.bar:hover{
+		  background: #fff;
+		}
+
+		input[name="r"]{
+			position: absolute;
+			visibility: hidden;
+		}
+
+		.slides{
+		  width: 500%;
+		  height: 100%;
+		  display: flex;
+
+		}
+
+		.slide{
+		  width: 20%;
+		  transition: 0.8s;
+		}
+		.slide img{
+		  width: 100%;
+		  height: 100%;
+		}
+
+		#r1:checked ~ .s1{
+		  margin-left: 0;
+		}
+		#r2:checked ~ .s1{
+		  margin-left: -20%;
+		}
+		#r3:checked ~ .s1{
+		  margin-left: -40%;
+		}
+			
+		table{
+			border-radius:20px;
+			font-family:calibri;
+			font-weight:bold;
+			font-style:italic;
+			}
+		
+		.TOrange{
+			background-color: darkorange;
+			color: white;
+		}
+			
+		.TWhite{
+			background-color: white;
+			color: darkorange;
+		}
+			
+		#C1{
+			position: absolute;
+			top: 580px;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		
+		#C2{
+			position: absolute;
+			top: 820px;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		
+		#C3{
+			position: absolute;
+			top: 1060px;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		
+		#C4{
+			position: absolute;
+			top: 1300px;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		
+		#C5{
+			position: absolute;
+			top: 1540px;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.button{
+			background-color:White;
+			color:orange;
+		}
+		
+		.tbutton{
+			background-color:red;
+			border:none;
+			color:white;
+			text-align:center;
+			margin:4px 2px;
+			transition:0.3s;
+			cursor:pointer;
+			height:30px;
+			width:60px;
+			font-size:10px;
+			font-weight:bold;
+		}
+		.button {
+			 background-color:red;
+			 border: none;
+			 color: white;
+			 padding: 7.5px 12.75px;
+			 text-align: center;
+			 text-decoration: none;
+			 display: inline-block;
+			 font-size: 13px;
+			 margin: 1px 1px;
+			 cursor: pointer;
+			 border-radius:5px;
+         }
+		.button:hover{
+			transition:0.5s;
+			background-color:#8b0000;
+		}
+
+				
+		</style>
+	</head>
+	
+	<body>
+		<div class='body'>
+		<div class='filterzz'>
+		<div class="navbar">
+		  <a href="../../Lerwin Web/Web Page/Main page.html" class='marginleft'><img src='../Pictures/sporthlogo.png'/></a>
+		  <b>|</b>
+		  <a href="../../Johann Web/Jpage/facilitiesx.html" class='marginleft'> Facilities</a>
+		  <b>|</b>
+		  <a href="../../Johann Web/Jpage/bookingpage.html" class='marginleft'> Book</a>
+		  <b>|</b>
+		  <a href="#" class='marginleft'> Events</a>
+		  <b>|</b>
+		  <a href="../../Damian Web/damianfiles/FAQ active-NYp.html" class='marginleft'> FAQs</a>
+		  <a href="../../Lerwin Web/Web Page/Sign in.html" target='_self' style=' float:right; font-size:26px;'>Sign In/Log In</a>
+		  <b style=' float:right; font-size:22px;'>|</b>
+		  <input style='border-style:solid;' type='text' placeholder='Search..' autocomplete='on' />
+		</div>
+		<div class='container-fluid'>
+		<div class='row col-sm-12'>
+		    <div class="slidershow middle">
+
+			  <div class="slides">
+				<input type="radio" name="r" id="r1" checked>
+				<input type="radio" name="r" id="r2">
+				<input type="radio" name="r" id="r3">
+					<div class="slide s1">
+						<img src="../Pictures/Slide P1 p2.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="../Pictures/Slide P2.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="../Pictures/Slide P3.jpg" alt="">
+					</div>
+			  </div>
+
+			  <div class="navigation">
+				<label for="r1" class="bar"></label>
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+			  </div>
+			</div>
+		<table class="TOrange" id="C1" border="0" cellpadding="5" width="85%">
+			<tr>
+				<td rowspan="5" width="18%"><img width="100%" height="60%" style="border-radius:20px;" src="../Pictures/P1 square.png"></td>
+				<td width="80%" align="left">&nbsp Title: 2019 INTERNATIONAL CHAMPIONS CUP SINGAPORE</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Date: 20/21 July 2019</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Time: 7.30PM To 9.30PM</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Watch the International Champions Cup in Singapore where Europe's top clubs play!</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp <a href="C1.html" class="button">View More</a></td>
+			</tr>
+		</table>
+			<table class="TWhite" id="C2" border="0" cellpadding="5" width="85%">
+			<tr>
+				<td rowspan="5" width="18%"><img width="100%" height="60%" style="border-radius:20px;" src="../Pictures/P2 square.jpg"></td>
+				<td style="text-align:left;" width="80%">&nbsp Title: 2019 NU'EST CONCERT SEGNO</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Date: 24 August 2019</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Time: 6.00PM To 8.00PM</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Watch korean performers Segno perfrom in Singapore!</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp <a href="C2.html" class="button">View More</a></td>
+			</tr>
+		</table>
+			<table class="TOrange" id="C3" border="0" cellpadding="5" width="85%">
+			<tr>
+				<td rowspan="5" width="18%"><img width="100%" height="60%" style="border-radius:20px;" src="../Pictures/P3 square.jpg"></td>
+				<td style="text-align:left;" width="80%">&nbsp Title: FINA SWIMMING WORLD CUP SINGAPORE 2019</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Date: 15/16/17 August 2019</td>
+			</tr>
+			<tr>
+				<td align="left" >&nbsp Time: 6.30PM</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Watch our Singapore swimmers go head to head against World and Olympic Winners!</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp <a href="C3.html" class="button">View More</a></td>
+			</tr>
+		</table>
+			<table class="TWhite" id="C4" border="0" cellpadding="5" width="85%">
+			<tr>
+				<td rowspan="5" width="18%"><img width="100%" height="60%" style="border-radius:20px;" src="../Pictures/SF EP.jpeg"></td>
+				<td style="text-align:left;" width="80%">&nbsp Title: E-PAYMENTS MADE EASY</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Date: 23 August 2019</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Time: 9am To 5pm</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Learn how to do payments more securely with SkillsFuture</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp <a href="C4.html" class="button">View More</a></td>
+			</tr>
+		</table>
+		<table class="TOrange" id="C5" border="0" cellpadding="5" width="85%">
+			<tr>
+				<td rowspan="5" width="18%"><img width="100%" height="60%" style="border-radius:20px;" src="../Pictures/SF DW.jpeg"></td>
+				<td style="text-align:left;" width="80%">&nbsp Title: Digital Workplace</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Date:22/23 Aug 2019</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Time: 9am To 5pm</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp Give yourself a chance to learn about Augmented Reality, Virtual Reality and Machine Learning and even experiment with them</td>
+			</tr>
+			<tr>
+				<td align="left">&nbsp <a href="C5.html" class="button">View More</a></td>
+			</tr>
+		</table>
+
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class='container-fluid'>
+		<div class='row' style='background-color:#e6e6e6;'>
+		<div align='center' class='col-sm-12 bottom'> <div style='border-style:solid;'>
+																	<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-wifi'></a></span>
+																	<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-google-plus'></a></span>
+																	<span class='social1'><a href='www.facebook.com' target='_blank' class='fa fa-facebook'></a></span>
+																	<span class='social2'><a href='www.instagram.com' target='_blank' class='fa fa-instagram'></a></span>
+																	<span class='social3'><a href="#" class="fa fa-twitter"></a></span>
+																	<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-youtube'></a></span>
+													  </div>
+			</div>
+		</div>
+		</div>
+		<div class='container-fluid'>
+		<div class='row' style='background-color:#e6e6e6;'>
+			<div class='col-sm-12'>
+			<div class="flip-card" style='margin-left:8%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Contact</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>+6592487248</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-envelope'>&nbsp;Gmail</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Active_NYP@gmail.com</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Location</i>
+				</div>
+				<div class="flip-card-back flip-card-backa">
+				  <i>180 Ang Mo Kio Avenue 8 Singapore (569830)</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-handshake-o'>&nbsp;Sponsors</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Ms Victoria Chin</i> 
+				</div>
+			  </div>
+			</div></br>
+			<hr style='border-top:1px solid #e67300'>
+			<h1 align='center'>ACTIVE-NYP</h1><br/>
+			<hr style='border-top:1px solid #e67300'>
+			<h6 align='center'>&copy;Copyright Jan 2019-August 2019</h6>
+			<h6 align='center'>All rights reserved. Powered by <span style='color:#e67300; font-weight:bold;'>Sporth</span></h6>
+			</div>
+		 </div>
+		 </div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+	box-sizing: border-box;
+}
+.body{ 
+  background-image: url('../Pictures/sport2.jpg'); 
+  background-size:cover;
+  position: relative;
+}
+.filter{
+	background-color: rgba( 0,0,0,0.4);
+	z-index:-5;
+}
+.button{
+	font-size:20px; 
+	color:red; 
+	border-radius:10px;
+	width:230px;
+	height:32px;
+	margin-bottom: 9px;
+}
+.button:hover{
+	background-image: linear-gradient(120deg,#e67300,#e6e6e6);
+}
+.Signup{
+	font-size:17px;
+	border:2px solid gray;
+	border-radius: 10px;
+	color:red; 
+	text-decoration:none;
+	padding: 3px 27px 4px 27px;
+	background-color: #e6e6e6;
+}
+.Signup:hover{
+	background-image: linear-gradient(120deg,#e67300,#e6e6e6);
+	text-decoration:none;
+	color:red;
+}
+
+
+@media screen and (max-width: 500px) {
+	.location {
+		float:left;
+		
+	}
+}

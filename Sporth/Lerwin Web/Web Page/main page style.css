@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+}
+.body{ 
+  background-image: url('../Pictures/t-junction-foosball.jpg'); 
+  min-height: 600px;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+}
+.filter{
+	background-color: rgba( 0,0,0,0.6);
+	z-index:-5;
+}
+
+.forthimg{
+	background-image: url('../Pictures/forthimg.jpg');
+	 background-size:cover; 
+	 background-repeat:no-repeat;
+	 max-height:500px;
+}
+.filter2{
+	background-color:#cc6600;
+	opacity:0.6;
+	}
+.filter2:hover{
+	opacity:1.0;
+}
+.center{
+	color: white;
+    font-size:5em;
+    font-style: italic;
+	font-weight:bold;
+	text-align:center;
+	margin-top:100px;
+}
+
+ 
+.view:hover {
+	background-color:white;
+	border-radius: 14px;
+	transition:0.3s;
+	text-decoration:none;
+	color:red;
+}
+
+.button2b{
+	background-color:transparent;
+	border-radius:14px;
+	font-size:1em;
+	border-style: solid;
+	text-align:center;
+	font-weight:bold;
+	padding:8px;
+	color:#e67300;
+	text-decoration:none;
+}
+
+.sizing2 {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow:2px 2px 2px 2px #808080;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sizing2:hover .image {
+  opacity: 0.3;
+}
+
+.sizing2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#e6e6e6;
+  border-radius:50%;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.text2{
+	text-decoration:none;
+	font-weight:bold;
+	font-size:20px;
+	color:#333333;
+}
+.future:hover{
+	color:black;
+	background-color:white;
+	transition:0.3s;
+	text-decoration:none;
+}
+.future{
+	font-size:1.3em;
+	font-family:arial;
+	font-weight:bold;
+	color:white;
+	text-decoration:none;
+	border-style:solid;
+	padding:10px;
+	text-align:center;
+}
+@media screen and (max-width: 500px) {
+  .auto td{
+display-style:none;
+  }
+}
+.futureheader{
+	font-size:2em;
+	font-family:arial;
+	font-weight:bold;
+	color:#e67300;
+	padding:10px;
+	text-align:center;
+	
+}

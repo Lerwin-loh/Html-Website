@@ -1,0 +1,249 @@
+<html>
+
+<head>
+	<title>Booking of Facilities - ActiveNYP</title>
+	<link rel="stylesheet" href="../../Genboy.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+
+.body{
+  background-image: url('../Pictures/snw.jpg');
+  min-height: 918px;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+}
+
+select{
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+#bookye{
+	position:absolute;
+	top:30%;
+	left:50%;
+	margin: 0px -190px;
+
+}
+
+#orangoheadof{
+	color:orange;
+	font-size:50px;
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-shadow:2px 2px 2px black;
+
+}
+
+form{
+		background-color:white;
+		font-family: calibri;
+		width: 400px;
+		padding:10px;
+		border-radius:10px;
+		margin:auto;
+		font-size:18px;
+}
+
+label{
+		float: left;
+        width: 100px;
+        display: block;
+        clear: left;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 10px;
+}
+
+input, select{
+		margin-top: 10px;
+	    display: block;
+		background-color:#f1f1f1;
+}
+
+input[type=submit]{
+		width:100%;
+		background-color:orange;
+		border:none;
+		color: white;
+		padding: 16px 32px;
+		cursor: pointer;
+		border-radius:4px;
+}
+
+input[type=submit]:hover{
+		background-color:darkorange;
+		transition:0.3s;
+}
+
+#bookfaci{
+		padding:3px 3px;
+		border: none;
+		border-radius: 4px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+	<div class='body'>
+		<div class='filter'>
+		<div class="navbar">
+		  <a href="../../Lerwin Web/Web Page/Main page.html" class='marginleft'><img src='../Pictures/sporthlogo.png'/></a>
+		  <b>|</b>
+		  <a href="facilitiesx.html" class='marginleft'> Facilities</a>
+		  <b>|</b>
+		  <a href="bookingpage.html" class='marginleft'> Book</a>
+		  <b>|</b>
+		  <a href="../../Irfhan Web/Irfhanpage/Webpage Page 1.html" class='marginleft'> Events</a>
+		  <b>|</b>
+		  <a href="../../Damian Web/damianfiles/FAQ active-NYp.html" class='marginleft'> FAQs</a>
+		  <a href="../../Lerwin Web/Web Page/Sign in.html" target='_self' style=' float:right; font-size:26px;'>Sign In/Log In</a>
+		  <b style=' float:right; font-size:22px;'>|</b>
+		  <input style='border-style:solid;' type='text' placeholder='Search..' autocomplete='on' />
+		</div>
+	
+			<div class="container-fluid">
+			<div class="row col-sm-12">
+			<h1 align='center'id="orangoheadof" style="margin-top:5%;"> Booking of Facility</h1>
+			</div>
+			</div>
+			
+			
+			<div class="container-fluid">
+			<div class="row col-sm-12">
+			<form action="successfbook.html" method="post" id="bookye" style="margin-top:5%;">
+					<label for="fname">Admin no.: </label>
+						<input type="text" name="fname" id="bookfaci" required="required" size="30px">
+					<label for ="email">E-mail: </label>
+						<input type="email" name="email" id="bookfaci" required="required" size="30px">
+					<label for="mobileno">Mobile no.:</label>
+						<input type="text" name="mobileno" id="bookfaci" maxlength="8" size="30px">
+					<label for="facilityb">Facility: </label>
+				<select>
+					<option value="blanknothingemptynada">&nbsp</option>
+					<optgroup label="Bowling">
+						<option value="bowling">Lane 1</option>
+						<option value="bowling">Lane 2</option>
+						<option value="bowling">Lane 3</option>
+						<option value="bowling">Lane 4</option>
+						<option value="bowling">Lane 5</option>
+					</optgroup>
+					<optgroup label="Soccer field">
+						<option value="soccer">Soccer field 1</option>
+						<option value="soccer">Soccer field 2</option>
+					</optgroup>
+					</optgroup>
+					<optgroup label="Basketball">
+						<option value="bball">Basketball court 1</option>
+						<option value="bball">Basketball court 2</option>
+						<option value="bball">Basketball court 3</option>
+					</optgroup>
+					<optgroup label="Billiard">
+						<option value="billiard">Table 1</option>
+						<option value="billiard">Table 2</option>
+						<option value="billiard">Table 3</option>
+						<option value="billiard">Table 4</option>
+					</optgroup>
+					<optgroup label="Dance Studios">
+			 			<option value="dancestudio">Dance Studio 1</option>
+						<option value="dancestudio">Dance Studio 2</option>
+					</optgroup>
+					<optgroup label="Tennis">
+						<option value="tenniscourts">Tennis court 1</option>
+						<option value="tenniscourts">Tennis court 2</option>
+						<option value="tenniscourts">Tennis court 3</option>
+						<option value="tenniscourts">Tennis court 4</option>
+					</optgroup>
+				</select>
+						<label for="stime">Start time: </label>
+							<input type="time" name="stime" id="bookfaci" required="required">
+						<label for="etime">End time: </label>
+							<input type="time" name="etime" id="bookfaci" required="required">
+						<label for="fdate">Date: </label>
+							<input type="date" name="fdate" id="bookfaci" required="required">
+							<input type="submit" id="submit" value="Submit">
+			</form>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class='container-fluid'>
+			<div class='row' style='background-color:#e6e6e6;'>
+				<div align='center' class='col-sm-12 bottom'> 
+				<div style='border-style:solid;'>
+				<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-wifi'></a></span>
+				<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-google-plus'></a></span>
+				<span class='social1'><a href='www.facebook.com' target='_blank' class='fa fa-facebook'></a></span>
+				<span class='social2'><a href='www.instagram.com' target='_blank' class='fa fa-instagram'></a></span>
+				<span class='social3'><a href="#" class="fa fa-twitter"></a></span>
+				<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-youtube'></a></span>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class='container-fluid'>
+		<div class='row' style='background-color:#e6e6e6;'>
+			<div class='col-sm-12'>
+			<div class="flip-card" style='margin-left:8%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Contact</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>+6592487248</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-envelope'>&nbsp;Gmail</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Active_NYP@gmail.com</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Location</i>
+				</div>
+				<div class="flip-card-back flip-card-backa">
+				  <i>180 Ang Mo Kio Avenue 8 Singapore (569830)</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-handshake-o'>&nbsp;Sponsors</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Ms Victoria Chin</i> 
+				</div>
+			  </div>
+			</div></br>
+			<hr style='border-top:1px solid #e67300'>
+			<h1 align='center'>ACTIVE-NYP</h1><br/>
+			<hr style='border-top:1px solid #e67300'>
+			<h6 align='center'>&copy;Copyright Jan 2019-August 2019</h6>
+			<h6 align='center'>All rights reserved. Powered by <span style='color:#e67300; font-weight:bold;'>Sporth</span></h6>
+			</div>
+		 </div>
+		 </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<html>
+
+<head>
+	<title>Facilities - ActiveNYP</title>
+	<link rel="stylesheet" href="../../Genboy.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+<style>
+body{
+	background-image: url('../Pictures/facilitiesimg.jpg');
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#cardflippy{
+	float: left;
+	margin-top:10%;
+	height:50%;
+	width:25%;
+}
+
+.flip-cardye {
+	background-color: transparent;
+	perspective:5000px;
+	font-family:calibri;
+}
+
+.flip-card-innerye {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.flip-cardye:hover .flip-card-innerye {
+	transform: rotateY(180deg);
+}
+
+.flip-card-frontye, .flip-card-backboi {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-frontye {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-backboi {
+	background-color:orange;
+	color:white;
+	transform: rotateY(180deg);
+	font-size: 145%;
+}
+
+.bookbtn{
+	position:sticky;
+	bottom:2%;
+	margin-left:43.5%;
+	margin-bottom:1%;
+	background-color:red;
+	border:none;
+	color:white;
+	text-align:center;
+	font-size:25px;
+	cursor:pointer;
+	height:100px;
+	width:200px;
+	font-weight:bold;
+}
+
+.bookbtn:hover{
+	background-color:darkred;
+	transition:0.3s;
+}
+
+</style>
+</head>
+
+<body>
+	<div class='body'>
+		<div class='filter'>
+		<div class="navbar">
+		  <a href="../../Lerwin Web/Web Page/Main page.html" class='marginleft'><img src='../Pictures/sporthlogo.png'/></a>
+		  <b>|</b>
+		  <a href="facilitiesx.html" class='marginleft'> Facilities</a>
+		  <b>|</b>
+		  <a href="bookingpage.html" class='marginleft'> Book</a>
+		  <b>|</b>
+		  <a href="../../Irfhan Web/Irfhanpage/Webpage Page 1.html" class='marginleft'> Events</a>
+		  <b>|</b>
+		  <a href="../../Damian Web/damianfiles/FAQ active-NYp.html" class='marginleft'> FAQs</a>
+		  <a href="../../Lerwin Web/Web Page/Sign in.html" target='_self' style=' float:right; font-size:26px;'>Sign In/Log In</a>
+		  <b style=' float:right; font-size:22px;'>|</b>
+		  <input style='border-style:solid;' type='text' placeholder='Search..' autocomplete='on' />
+		</div>
+	<div class='container-fluid'>
+	<div class='row col-sm-12' style="margin-bottom:-8%;">
+	<h1 style="font-size:100px;color:orange;font-family:calibri;font-weight:bold;text-shadow:2px 2px 2px black;text-align:center;"> Facilities </h1>
+	</div>
+	</div>
+	<div class='container-fluid'>
+	<div class='row col-sm-12' >
+	<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/bowlingimg.jpg" alt="Bowling" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Bowling</h1>
+			<p>Bowling is cool.</p>
+			<p>There are 5 bowling lanes. There is also a snack bar. Shoes are provided. You may sign up for bowling lessons if interested at AMK NYP.</p>
+			<p>The bowling alley is located at level 2 in the building.</p>
+		</div>
+		</div>
+	</div>
+
+		<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/socimg.jpg" alt="Soccer" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Soccer</h1>
+			<p>Soccer is cool.</p>
+			<p>There are 2 soccer fields. Soccer balls are provided. You may sign up for soccer lessons if interested at AMK NYP.</p>
+			<p>The soccer fields are located at the back in the building.</p>
+		</div>
+		</div>
+	</div>
+
+		<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/bballimg.jpg" alt="Basketball" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Basketball</h1>
+			<p>Basketball is cool.</p>
+			<p>There are 3 basketball courts. Basketballs are provided. You may sign up for basketball lessons if interested at AMK NYP.</p>
+			<p>The basketball courts are located at level 2 in the building.</p>
+		</div>
+		</div>
+	</div>
+
+		<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/swimimg.jpg" alt="Swimming" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Swimming</h1>
+			<p>Swimming is cool.</p>
+			<p>There are 2 swimming pools. There is 4 shower rooms. Lifeguards are always available. You may sign up for swimming lessons at AMK NYP.</p>
+			<p>The swimming pools are located at the back in the building.</p>
+		</div>
+		</div>
+	</div>
+
+	<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/bilimg.jpg" alt="Billiard" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Billiard</h1>
+			<p>Billiard is cool.</p>
+			<p>There are 4 pool tables. Cue sticks are provided and there is a snack bar. Billiard lessons are available for sign up if interested at AMK NYP.</p>
+			<p>The pool tables are located at level 3 in the building.</p>
+		</div>
+		</div>
+	</div>
+
+		<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/gymimg.jpg" alt="Gym" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Gym</h1>
+			<p>The gym is cool.</p>
+			<p>The gym is very big. It has all kinds of gym equipments. A towel is neccesary for entrance. A fitness coach is available for hire at AMK NYP.</p>
+			<p>The gym is located at level 1 in the building.</p>
+		</div>
+		</div>
+	</div>
+
+		<div class="flip-cardye" id="cardflippy">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/dsimg.jpg" alt="Dance Studio" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Dance Studio</h1>
+			<p>Dancing is cool.</p>
+			<p>There are 3 dance studios with mirrors, props and air-conditioning.</p>
+			<p>The dance studios are located at level 2 in the building.</p>
+		</div>
+		</div>
+	</div>
+
+		<div class="flip-cardye" id="cardflippy" style="margin-bottom:2%;">
+		<div class="flip-card-innerye">
+			<div class="flip-card-frontye">
+				<img src="../Pictures/tennisximg.jpeg" alt="Tennis" style="width:100%;height:100%;">
+			</div>
+		<div class="flip-card-backboi">
+			<h1>Tennis</h1>
+			<p>Tennis is cool.</p>
+			<p>There are 4 tennis courts. Tennis rackets and balls are provided. The tennis court already has nets available.</p>
+			<p>The tennis courts are located at level four in the building.</p>
+		</div>
+		</div>
+	</div>
+		<div class="container-fluid">
+		<form action="bookingpage.html">
+		<input type="submit" value="Book Facility" class='bookbtn'>
+		</form>
+		</div>
+	</div>
+	</div>
+
+		<div class='container-fluid'>
+			<div class='row' style='background-color:#e6e6e6;'>
+				<div align='center' class='col-sm-12 bottom'> 
+				<div style='border-style:solid;'>
+				<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-wifi'></a></span>
+				<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-google-plus'></a></span>
+				<span class='social1'><a href='www.facebook.com' target='_blank' class='fa fa-facebook'></a></span>
+				<span class='social2'><a href='www.instagram.com' target='_blank' class='fa fa-instagram'></a></span>
+				<span class='social3'><a href="#" class="fa fa-twitter"></a></span>
+				<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-youtube'></a></span>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class='container-fluid'>
+		<div class='row' style='background-color:#e6e6e6;'>
+			<div class='col-sm-12'>
+			<div class="flip-card" style='margin-left:8%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Contact</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>+6592487248</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-envelope'>&nbsp;Gmail</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Active_NYP@gmail.com</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Location</i>
+				</div>
+				<div class="flip-card-back flip-card-backa">
+				  <i>180 Ang Mo Kio Avenue 8 Singapore (569830)</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-handshake-o'>&nbsp;Sponsors</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Ms Victoria Chin</i> 
+				</div>
+			  </div>
+			</div></br>
+			<hr style='border-top:1px solid #e67300'>
+			<h1 align='center'>ACTIVE-NYP</h1><br/>
+			<hr style='border-top:1px solid #e67300'>
+			<h6 align='center'>&copy;Copyright Jan 2019-August 2019</h6>
+			<h6 align='center'>All rights reserved. Powered by <span style='color:#e67300; font-weight:bold;'>Sporth</span></h6>
+			</div>
+		 </div>
+		 </div>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head><title>FAQ - ActiveNYP</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="../../Genboy.css" rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+
+
+.bodys{
+			background-image:url(../Pictures/faq.jpg);
+			min-height:700px;
+			background-size:cover;
+			background-position:center;
+			position:relative;
+			}
+.center {
+			margin: auto;
+			width: 60%;
+			padding:10px;
+			text-align:center;
+	
+			color:red;
+			position:absolute;
+			left:20%;
+			top:20%;
+}
+.navbar {
+  width: 100%;
+}
+ p{	
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+ }
+ h2{
+	color:yellow;
+	text-shadow: 0px 2px blue;
+}
+
+.accordion {
+ background-color:transparent;
+ background-image:none;
+  color: #F00;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight:bold;
+}
+
+.accordion:hover{
+	color:#e76300;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:transparent;
+  overflow: hidden;
+}
+th{ 
+	color:yellow;
+	font-style:italic;
+}
+.filt{
+		background-color:rgba( 0,0,0,0.6);
+		z-index:-5;
+		}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+<meta name='viewport'
+		content='width=device-width, initial-scale=1'>
+</head>
+<body>
+	<div class='bodys'>
+		<div class='filt'>
+		<div class="navbar">
+		  <a href="../../Lerwin Web/Web Page/Main page.html" class='marginleft'><img src='../Pictures/sporthlogo.png'/></a>
+		  <b>|</b>
+		  <a href="../../Johann Web/Jpage/facilitiesx.html" class='marginleft'> Facilities</a>
+		  <b>|</b>
+		  <a href="../../Johann Web/Jpage/bookingpage.html" class='marginleft'> Book</a>
+		  <b>|</b>
+		  <a href="../../Irfhan Web/Irfhanpage/Webpage Page 1.html" class='marginleft'> Events</a>
+		  <b>|</b>
+		  <a href="#" class='marginleft'> FAQs</a>
+		  <a href="../../Lerwin Web/Web Page/Sign in.html" target='_self' style=' float:right; font-size:26px;'>Sign In/Log In</a>
+		  <b style=' float:right; font-size:22px;'>|</b>
+		  <input style='border-style:solid;' type='text' placeholder='Search..' autocomplete='on' />
+		</div>
+	<h1 style="color:red;text-align:center;">Frequently Asked Questions</h1>
+		
+	<button class="accordion">How long can i book the facility for</button>
+	<div class="panel">
+	<p>You can book the facility for an hour per admin card</p>
+	</div>
+	<button class="accordion">Who can use the facility</button>
+	<div class="panel">
+	<p>Only students or teachers are allowed to use the facility as the facilities are owned by the school</p>
+	</div>
+	<button class="accordion">Must i pay to use the facilities</button>
+	<div class="panel">
+	<p>No you dont need to pay to use the facilties <span style="color:red;">BUT</span> if you damage or litter in any of the facilities,you will pay a fine</p>
+	</div>
+	</br></br></br>
+	<p style='color:yellow;margin-left:20px;'>Where are we located at</p>
+	</br>
+<img id="myImg" src="../Pictures/nyp.png" alt="location" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+	
+	
+	</br></br></br></br>
+	<h2>If you have any more questions or would like to share your thoughts about the facilities,do send us a response</h2>
+	<form method='post' action='process.html'>
+	<table border='5' bgcolor='grey'>
+	</br>	</br>	</br>
+	<tr>
+		<th>Name</th>
+		<td><input type="text" required='required' size='66px'></td>
+	</tr>
+	<tr>
+		<th>E-mail</th>
+		<td><input type='email' required='required' size='66px'></td>
+	</tr>
+	<tr>
+		<th>Feedback/questions</th>
+		<td><textarea row='1000' cols='60'>
+			</textarea></td>
+	</tr>	
+	<tr>
+		<td>&nbsp;</td>
+		<td><input type='submit'><input type='reset'></td>
+	</tr>
+	</table>
+	</form>
+</br>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<div class='container-fluid'>
+		<div class='row' style='background-color:#e6e6e6;'>
+		<div align='center' class='col-sm-12 bottom'> <div style='border-style:solid;'>
+																	<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-wifi'></a></span>
+																	<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-google-plus'></a></span>
+																	<span class='social1'><a href='www.facebook.com' target='_blank' class='fa fa-facebook'></a></span>
+																	<span class='social2'><a href='www.instagram.com' target='_blank' class='fa fa-instagram'></a></span>
+																	<span class='social3'><a href="#" class="fa fa-twitter"></a></span>
+																	<span class='social2'><a href='www.youtube.com' target='_blank' class='fa fa-youtube'></a></span>
+													  </div>
+			</div>
+		</div>
+		</div>
+		<div class='container-fluid'>
+		<div class='row' style='background-color:#e6e6e6;'>
+			<div class='col-sm-12'>
+			<div class="flip-card" style='margin-left:8%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Contact</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>+6592487248</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-envelope'>&nbsp;Gmail</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Active_NYP@gmail.com</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-mobile-phone'>&nbsp;Location</i>
+				</div>
+				<div class="flip-card-back flip-card-backa">
+				  <i>180 Ang Mo Kio Avenue 8 Singapore (569830)</i> 
+				</div>
+			  </div>
+			</div>
+			<div class="flip-card" style='margin-left:7.4%;'>
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <i class='fa fa-handshake-o'>&nbsp;Sponsors</i>
+				</div>
+				<div class="flip-card-back">
+				  <i>Ms Victoria Chin</i> 
+				</div>
+			  </div>
+			</div></br>
+			<hr style='border-top:1px solid #e67300'>
+			<h1 align='center'>ACTIVE-NYP</h1><br/>
+			<hr style='border-top:1px solid #e67300'>
+			<h6 align='center'>&copy;Copyright Jan 2019-August 2019</h6>
+			<h6 align='center'>All rights reserved. Powered by <span style='color:#e67300; font-weight:bold;'>Sporth</span></h6>
+			</div>
+		 </div>
+		 </div>
+</body>
+</html>
